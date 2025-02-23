@@ -8,6 +8,7 @@
     tools:context=".ui.TarotCards">
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -20,12 +21,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="400dp"
         android:layout_height="600dp"
-        tools:listitem="@layout/activity_card"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:listitem="@layout/activity_card" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/search_bar"
+        android:text="Confirm"
+        android:fontFamily="@font/akaya_kanadaka"
+        android:textSize="24dp"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

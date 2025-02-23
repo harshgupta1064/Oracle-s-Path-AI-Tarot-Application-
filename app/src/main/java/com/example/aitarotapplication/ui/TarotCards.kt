@@ -5,17 +5,38 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.aitarotapplication.R
+import com.example.aitarotapplication.adapters.TarotCardAdapter
+import com.example.aitarotapplication.data.TarotCardList
+import com.example.aitarotapplication.databinding.ActivityTarotCardsBinding
+import com.example.aitarotapplication.models.tarotCard
 
 class TarotCards : AppCompatActivity() {
+    val binding : ActivityTarotCardsBinding by lazy {
+        ActivityTarotCardsBinding.inflate(layoutInflater)
+    }
+    private val selectedCards = mutableListOf<tarotCard>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_tarot_cards)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        setContentView(binding.root)
+        val tarotCards = TarotCardList(this)
+        val recyclerView = binding.recyclerView
+        val confirmButton = binding.confirmButton
+        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.adapter = TarotCardAdapter(tarotCards) { selected ->
+            selectedCards.clear()
+            selectedCards.addAll(selected)
+            confirmButton.isEnabled = selectedCards.size == 3
+        }
+
+        confirmButton.setOnClickListener {
+            if (selectedCards.size == 3) {
+//                val intent = Intent(this, ResultActivity::class.java)
+//                intent.putParcelableArrayListExtra("SELECTED_CARDS", ArrayList(selectedCards))
+//                startActivity(intent)
+            }
         }
     }
 }
