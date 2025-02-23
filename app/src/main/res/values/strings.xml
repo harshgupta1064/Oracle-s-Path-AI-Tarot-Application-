@@ -1,3 +1,85 @@
 <resources>
     <string name="app_name">AI Tarot Application</string>
+    <string name="tarot_major_fool">New beginnings, spontaneity, and taking a leap of faith.</string>
+    <string name="tarot_major_magician">Manifestation, resourcefulness, and creative power.</string>
+    <string name="tarot_major_high_priestess">Intuition, mystery, and inner wisdom.</string>
+    <string name="tarot_major_empress">Abundance, fertility, and nurturing energy.</string>
+    <string name="tarot_major_emperor">Authority, structure, and stability.</string>
+    <string name="tarot_major_hierophant">Tradition, spiritual guidance, and learning.</string>
+    <string name="tarot_major_lovers">Love, harmony, and choices in relationships.</string>
+    <string name="tarot_major_chariot">Willpower, determination, and success.</string>
+    <string name="tarot_major_strength">Inner strength, courage, and patience.</string>
+    <string name="tarot_major_hermit">Introspection, solitude, and inner guidance.</string>
+    <string name="tarot_major_wheel_of_fortune">Cycles, destiny, and turning points.</string>
+    <string name="tarot_major_justice">Fairness, truth, and accountability.</string>
+    <string name="tarot_major_hanged_man">Surrender, perspective, and letting go.</string>
+    <string name="tarot_major_death">Transformation, endings, and new beginnings.</string>
+    <string name="tarot_major_temperance">Balance, moderation, and patience.</string>
+    <string name="tarot_major_devil">Temptation, materialism, and self-imposed bondage.</string>
+    <string name="tarot_major_tower">Sudden change, upheaval, and revelation.</string>
+    <string name="tarot_major_star">Hope, inspiration, and renewal.</string>
+    <string name="tarot_major_moon">Illusion, intuition, and the subconscious.</string>
+    <string name="tarot_major_sun">Success, vitality, and joy.</string>
+    <string name="tarot_major_judgment">Awakening, reflection, and rebirth.</string>
+    <string name="tarot_major_world">Completion, accomplishment, and wholeness.</string>
+
+    <!-- Minor Arcana: Cups -->
+    <string name="tarot_cups_ace">New emotions, love, and creativity.</string>
+    <string name="tarot_cups_two">Partnership, connection, and harmony.</string>
+    <string name="tarot_cups_three">Celebration, friendship, and joy.</string>
+    <string name="tarot_cups_four">Apathy, contemplation, and missed opportunities.</string>
+    <string name="tarot_cups_five">Loss, disappointment, and emotional setbacks.</string>
+    <string name="tarot_cups_six">Nostalgia, childhood, and happy memories.</string>
+    <string name="tarot_cups_seven">Choices, illusions, and daydreams.</string>
+    <string name="tarot_cups_eight">Walking away, seeking truth, and transition.</string>
+    <string name="tarot_cups_nine">Contentment, satisfaction, and wishes fulfilled.</string>
+    <string name="tarot_cups_ten">Happiness, family, and emotional fulfillment.</string>
+    <string name="tarot_cups_page">Creativity, curiosity, and emotional beginnings.</string>
+    <string name="tarot_cups_knight">Romance, charm, and idealism.</string>
+    <string name="tarot_cups_queen">Compassion, intuition, and emotional security.</string>
+    <string name="tarot_cups_king">Emotional balance, leadership, and wisdom.</string>
+
+    <!-- Minor Arcana: Pentacles -->
+    <string name="tarot_pentacles_ace">New financial opportunities and prosperity.</string>
+    <string name="tarot_pentacles_two">Balance, adaptability, and time management.</string>
+    <string name="tarot_pentacles_three">Collaboration, skill, and teamwork.</string>
+    <string name="tarot_pentacles_four">Security, control, and material stability.</string>
+    <string name="tarot_pentacles_five">Financial loss, struggle, and hardship.</string>
+    <string name="tarot_pentacles_six">Generosity, sharing, and giving.</string>
+    <string name="tarot_pentacles_seven">Patience, investment, and long-term growth.</string>
+    <string name="tarot_pentacles_eight">Mastery, hard work, and dedication.</string>
+    <string name="tarot_pentacles_nine">Independence, success, and self-sufficiency.</string>
+    <string name="tarot_pentacles_ten">Wealth, legacy, and family stability.</string>
+    <string name="tarot_pentacles_page">Ambition, learning, and new skills.</string>
+    <string name="tarot_pentacles_knight">Diligence, responsibility, and hard work.</string>
+    <string name="tarot_pentacles_queen">Practicality, nurturing, and financial wisdom.</string>
+    <string name="tarot_pentacles_king">Prosperity, leadership, and financial mastery.</string>
+
+    <!-- Minor Arcana: Swords -->
+    <string name="tarot_swords_ace">New ideas, clarity, and breakthroughs.</string>
+    <string name="tarot_swords_two">Indecision, choices, and stalemate.</string>
+    <string name="tarot_swords_three">Heartbreak, sorrow, and emotional pain.</string>
+    <string name="tarot_swords_four">Rest, recovery, and contemplation.</string>
+    <string name="tarot_swords_five">Conflict, tension, and betrayal.</string>
+    <string name="tarot_swords_six">Transition, moving forward, and healing.</string>
+    <string name="tarot_swords_seven">Deception, strategy, and hidden motives.</string>
+    <string name="tarot_swords_eight">Limitation, fear, and self-restriction.</string>
+    <string name="tarot_swords_nine">Anxiety, worry, and sleepless nights.</string>
+    <string name="tarot_swords_ten">Endings, rock bottom, and betrayal.</string>
+    <string name="tarot_swords_page">Curiosity, new perspectives, and intellect.</string>
+    <string name="tarot_swords_knight">Ambition, directness, and determination.</string>
+    <string name="tarot_swords_queen">Perception, honesty, and clear thinking.</string>
+    <string name="tarot_swords_king">Authority, truth, and intellectual power.</string>
+
+    <!-- Minor Arcana: Wands -->
+    <string name="tarot_wands_ace">New inspiration, creativity, and potential.</string>
+    <string name="tarot_wands_two">Planning, progress, and new ventures.</string>
+    <string name="tarot_wands_three">Expansion, foresight, and leadership.</string>
+    <string name="tarot_wands_four">Celebration, harmony, and homecoming.</string>
+    <string name="tarot_wands_five">Conflict, competition, and challenges.</string>
+    <string name="tarot_wands_six">Victory, success, and public recognition.</string>
+    <string name="tarot_wands_seven">Perseverance, defense, and standing ground.</string>
+    <string name="tarot_wands_eight">Speed, movement, and progress.</string>
+    <string name="tarot_wands_nine">Resilience, courage, and persistence.</string>
+    <string name="tarot_wands_ten">Burden, stress, and responsibilities.</string>
 </resources>
