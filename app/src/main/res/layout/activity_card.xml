@@ -3,22 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:layout_marginTop="20dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context=".ui.Card">
     <androidx.cardview.widget.CardView
-        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:elevation="15dp"
         app:cardCornerRadius="15dp"
         android:layout_gravity="center"
         >
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/tarot"/>
+            android:src="@drawable/tarot" />
     </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="Card Number"
+        android:textSize="24dp"
+        android:fontFamily="@font/akaya_kanadaka"
+        android:textStyle="bold"
+
+
+        android:layout_gravity="center_horizontal|bottom"/>
+
 
 
 </FrameLayout>

@@ -22,10 +22,10 @@ class TarotCardAdapter(
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         // This TextView displays the sequential card label (e.g., "Card 1")
-
+        val cardNumber : TextView = view.findViewById(R.id.cardNumber)
         fun bind(card: tarotCard, position: Int) {
             // Display the view's sequential number rather than the actual card number.
-
+            cardNumber.text = "${position + 1}"
             // If this card is selected, show it as selected (e.g. half-transparent)
             // If not selected and selection limit is reached, show it as disabled (even lower opacity)
             itemView.alpha = when {
