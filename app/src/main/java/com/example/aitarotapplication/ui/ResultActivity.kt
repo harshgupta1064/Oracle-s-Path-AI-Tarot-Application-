@@ -5,11 +5,15 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.aitarotapplication.R
 import com.example.aitarotapplication.adapters.resultCardAdapter
+import com.example.aitarotapplication.data.AppDatabase
+import com.example.aitarotapplication.data.Reading
 import com.example.aitarotapplication.databinding.ActivityResultBinding
 import com.example.aitarotapplication.models.tarotCard
+import kotlinx.coroutines.launch
 
 class ResultActivity : AppCompatActivity() {
     val binding:ActivityResultBinding by lazy {
@@ -19,8 +23,7 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
-        // Retrieve selected cards from the Intent.
-        // Make sure your tarotCard model implements Parcelable (or Serializable) properly.
+
         val selectedCards = intent.getSerializableExtra("SELECTED_CARDS") as? ArrayList<tarotCard>
         val userQuestion = intent.getStringExtra("userQuestion")
 
@@ -31,11 +34,31 @@ class ResultActivity : AppCompatActivity() {
         // Set a horizontal LinearLayoutManager.
         recyclerViewResults.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
-        // Set the adapter with the selected cards.
-        // If no cards are passed, you might want to handle the null case appropriately.
+
         selectedCards?.let { cards ->
             recyclerViewResults.adapter = resultCardAdapter(cards)
         }
         binding.userQuestion.text = "$userQuestion"
+
+        if (selectedCards != null && selectedCards.size == 3) {
+            // Extract the messages from each selected card
+            val reading = userQuestion?.let {
+                Reading(
+                    userQuestion = it,
+                    card1Message = selectedCards[0].cardMessage,
+                    card2Message = selectedCards[1].cardMessage,
+                    card3Message = selectedCards[2].cardMessage,
+                    readingDate = System.currentTimeMillis()
+                )
+            }
+
+            // Insert the reading into the Room database
+            val db = AppDatabase.getDatabase(this)
+            lifecycleScope.launch {
+                if (reading != null) {
+                    db.readingDao().insertReading(reading)
+                }
+            }
+        }
     }
 }
