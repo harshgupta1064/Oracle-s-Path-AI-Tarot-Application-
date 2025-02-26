@@ -5,9 +5,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.aitarotapplication.R
 import com.example.aitarotapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         val nextButton = binding.nextButton;
         val message = binding.message;
+        val historyButton = binding.historyButton
         nextButton.setOnClickListener {
             val userQuestion = message.text.toString().trim()
 
@@ -32,5 +30,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter a message.", Toast.LENGTH_SHORT).show()
             }
         }
+        historyButton.setOnClickListener{
+            val intent = Intent(this,HistoryList::class.java)
+            startActivity(intent)
+        }
+
     }
 }
