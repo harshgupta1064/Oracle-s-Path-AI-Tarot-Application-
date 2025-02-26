@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
-        android:fontFamily="@font/akaya_kanadaka"
+        android:fontFamily="@font/agbalumo"
         android:text="What can I help With?"
         android:textColor="@color/white"
         android:textSize="30sp"
