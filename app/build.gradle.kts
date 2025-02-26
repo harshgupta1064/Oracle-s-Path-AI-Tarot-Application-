@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("com.google.devtools.ksp")
+    id("com.google.devtools.ksp") version "1.9.22-1.0.16"
 
 
 }
@@ -60,7 +60,8 @@ dependencies {
 
     // Room Database for saving past readings
     implementation("androidx.room:room-runtime:2.6.1")
-    implementation("com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:1.9.22-1.0.16")
+    implementation("androidx.room:room-ktx:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
 
     // ViewModel and LiveData for state management
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")

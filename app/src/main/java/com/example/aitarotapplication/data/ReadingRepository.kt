@@ -1,7 +1,7 @@
 
 package com.example.aitarotapplication.data
 
-import ReadingDao
+import com.example.aitarotapplication.data.ReadingDao
 import androidx.lifecycle.LiveData
 
 class ReadingRepository(private val readingDao: ReadingDao) {

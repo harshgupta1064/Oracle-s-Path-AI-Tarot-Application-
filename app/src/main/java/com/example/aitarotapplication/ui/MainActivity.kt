@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val message = binding.message;
         val historyButton = binding.historyButton
         nextButton.setOnClickListener {
+
             val userQuestion = message.text.toString().trim()
 
             if (userQuestion.isNotEmpty()) {
@@ -31,8 +32,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
         historyButton.setOnClickListener{
-            val intent = Intent(this,HistoryList::class.java)
-            startActivity(intent)
+            val intent2 = Intent(this,HistoryList::class.java)
+            startActivity(intent2)
         }
 
     }

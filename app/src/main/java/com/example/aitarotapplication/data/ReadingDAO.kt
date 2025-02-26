@@ -1,13 +1,14 @@
+package com.example.aitarotapplication.data
+
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.aitarotapplication.data.Reading
+// other imports
+
 @Dao
 interface ReadingDao {
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert
     suspend fun insertReading(reading: Reading)
 
     @Query("SELECT * FROM readings ORDER BY readingDate DESC")

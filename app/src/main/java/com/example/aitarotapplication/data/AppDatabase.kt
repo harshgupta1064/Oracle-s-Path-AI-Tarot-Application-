@@ -1,6 +1,5 @@
 package com.example.aitarotapplication.data
-
-import ReadingDao
+import com.example.aitarotapplication.data.ReadingDao
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
