@@ -29,9 +29,6 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("userQuestion", userQuestion) // Pass question to next screen
                 startActivity(intent)
             } else {
-                val intent = Intent(this, TarotCards::class.java)
-                intent.putExtra("userQuestion", userQuestion) // Pass question to next screen
-                startActivity(intent)
                 Toast.makeText(this, "Please enter a message.", Toast.LENGTH_SHORT).show()
             }
         }
