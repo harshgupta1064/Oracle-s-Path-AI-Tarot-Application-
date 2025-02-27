@@ -13,7 +13,6 @@ import com.example.aitarotapplication.adapters.TarotCardAdapter
 import com.example.aitarotapplication.data.TarotCardList
 import com.example.aitarotapplication.databinding.ActivityTarotCardsBinding
 import com.example.aitarotapplication.models.tarotCard
-
 class TarotCards : AppCompatActivity() {
     val binding : ActivityTarotCardsBinding by lazy {
         ActivityTarotCardsBinding.inflate(layoutInflater)

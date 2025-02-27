@@ -1,5 +1,6 @@
 package com.example.aitarotapplication.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -60,5 +61,14 @@ class ResultActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        // Create an intent to start MainActivity
+        val intent = Intent(this, MainActivity::class.java)
+        // Set flags to clear the activity stack so that MainActivity becomes the top
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
+        finish() // Close the current ResultActivity
     }
 }
