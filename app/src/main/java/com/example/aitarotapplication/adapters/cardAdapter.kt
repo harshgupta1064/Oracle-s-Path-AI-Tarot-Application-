@@ -63,6 +63,7 @@ class TarotCardAdapter(
         // The adapter's list is already shuffled, so binding position corresponds to a shuffled TarotCard.
         val card = tarotCards[position]
         holder.bind(card, position)
+
     }
 
     override fun getItemCount(): Int = tarotCards.size

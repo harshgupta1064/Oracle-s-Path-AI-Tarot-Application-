@@ -8,8 +8,27 @@
     tools:context=".ui.ResultCard">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="550dp"
+        android:id="@+id/frontView"
+        android:layout_width="320dp"
+        android:layout_height="540dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tarot" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/backView"
+        android:layout_width="320dp"
+        android:layout_height="540dp"
+        android:visibility="gone"
         android:layout_margin="10dp"
         app:cardBackgroundColor="#AEEDEF"
         app:cardCornerRadius="15dp"
@@ -23,10 +42,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/black"
             android:fontFamily="@font/alkatra_medium"
             android:gravity="center"
             android:text="Hello"
+            android:textColor="@color/black"
             android:textSize="30dp" />
 
     </androidx.cardview.widget.CardView>

@@ -2,6 +2,8 @@ package com.example.aitarotapplication.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.view.animation.DecelerateInterpolator
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,7 +29,6 @@ class ResultActivity : AppCompatActivity() {
 
         val selectedCards = intent.getSerializableExtra("SELECTED_CARDS") as? ArrayList<tarotCard>
         val userQuestion = intent.getStringExtra("userQuestion")
-
 
         // Find the RecyclerView from the layout.
         val recyclerViewResults =   binding.recyclerView
@@ -61,6 +62,11 @@ class ResultActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.chatButton.setOnClickListener{
+            intent = Intent(this,ChatActivity::class.java)
+            intent.putExtra("userQuestion",userQuestion)
+            startActivity(intent)
+        }
     }
     override fun onBackPressed() {
         super.onBackPressed()
@@ -71,4 +77,5 @@ class ResultActivity : AppCompatActivity() {
         startActivity(intent)
         finish() // Close the current ResultActivity
     }
+
 }
