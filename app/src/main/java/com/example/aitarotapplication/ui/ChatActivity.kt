@@ -14,8 +14,6 @@ import com.example.aitarotapplication.R
 import com.example.aitarotapplication.adapters.ChatAdapter
 import com.example.aitarotapplication.databinding.ActivityChatBinding
 import com.example.aitarotapplication.models.ChatMessage
-import com.example.aitarotapplication.network.ChatGPTMessage
-import com.example.aitarotapplication.network.ChatGPTRequest
 import com.example.aitarotapplication.network.GeminiHelper
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
