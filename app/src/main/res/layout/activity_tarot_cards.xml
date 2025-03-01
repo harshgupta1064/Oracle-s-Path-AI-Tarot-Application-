@@ -38,7 +38,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/search_bar"
         android:text="Confirm"
-        android:fontFamily="@font/akaya_kanadaka"
+        android:fontFamily="@font/agbalumo"
         android:textSize="24dp"
         android:enabled="false"
         android:textStyle="bold"

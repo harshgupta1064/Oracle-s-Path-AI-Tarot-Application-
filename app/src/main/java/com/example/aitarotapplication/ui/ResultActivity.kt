@@ -65,8 +65,12 @@ class ResultActivity : AppCompatActivity() {
         binding.chatButton.setOnClickListener{
             intent = Intent(this,ChatActivity::class.java)
             intent.putExtra("userQuestion",userQuestion)
+            intent.putExtra("card1Message ", selectedCards?.get(0)?.cardMessage)
+            intent.putExtra("card2Message ", selectedCards?.get(1)?.cardMessage)
+            intent.putExtra("card3Message ", selectedCards?.get(2)?.cardMessage)
             startActivity(intent)
         }
+
     }
     override fun onBackPressed() {
         super.onBackPressed()

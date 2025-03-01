@@ -76,6 +76,7 @@
             android:id="@+id/chatButton"
             android:layout_width="280dp"
             android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:background="@drawable/search_bar"
             android:fontFamily="@font/agbalumo"
