@@ -26,6 +26,15 @@
             android:text="Chat with AI"
             android:textColor="@color/white"
             android:textSize="30sp" />
+        <ImageButton
+            android:id="@+id/micButton"
+            android:layout_width="40dp"
+            android:scaleType="centerCrop"
+            android:layout_height="40dp"
+            android:src="@drawable/mic"
+            android:background="@color/black"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="10dp"/>
     </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -51,6 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <!-- EditText for typing a message -->
+
         <EditText
             android:id="@+id/editTextMessage"
             android:layout_width="0dp"
@@ -75,5 +85,20 @@
             android:scaleType="centerCrop"
             android:src="@drawable/send_14359825" />
     </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/micOffButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        android:longClickable="true"
+        app:lottie_rawRes="@raw/mic_anim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
