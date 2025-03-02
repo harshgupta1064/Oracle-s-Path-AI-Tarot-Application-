@@ -75,7 +75,7 @@ The **AI Tarot Reading App** is a mystical fortune-telling application that allo
 
 ## 📲 Download APK  
 📥 **Get the latest version of the app:**  
-[![Download APK](https://img.shields.io/badge/⬇%20Download%20Latest-APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](YOUR_APK_DOWNLOAD_LINK)
+[![Download APK](https://img.shields.io/badge/⬇%20Download%20Latest-APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/harshgupta1064/AI-Tarot-App/releases/download/v1.0.0/Oracle.s.Path.apk)
 
 ---
 ## 📲 Usage  
