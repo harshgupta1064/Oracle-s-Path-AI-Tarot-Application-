@@ -103,6 +103,7 @@ The **AI Tarot Reading App** is a mystical fortune-telling application that allo
   <img src="Screenshots/AI%20Chat.png" alt="AI Chat" width="200">
   <img src="Screenshots/AI%20Voice%20Chat.png" alt="AI Voice Chat" width="200">
 </div>
+
 --- 
 
 ## 🤝 Contributing
