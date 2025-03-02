@@ -69,7 +69,7 @@ The **AI Tarot Reading App** is a mystical fortune-telling application that allo
 ---
 ## 🎥 Demo Video  
 📺 **Watch the full app demonstration on YouTube:**  
-[![Watch the Demo](https://img.shields.io/badge/▶%20Watch%20Demo%20on-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](YOUR_YOUTUBE_VIDEO_LINK)
+[![Watch the Demo](https://img.shields.io/badge/▶%20Watch%20Demo%20on-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=qBVbTYPbssc)
 
 ---
 
