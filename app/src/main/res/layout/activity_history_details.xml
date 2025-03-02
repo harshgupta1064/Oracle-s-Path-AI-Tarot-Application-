@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ResultActivity">
+    android:fitsSystemWindows="true"
+    tools:context=".ui.HistoryDetailsActivity">
+
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -30,42 +32,59 @@
             app:layout_constraintTop_toTopOf="parent" />
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/agbalumo"
-        android:text="Your Question"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
-
-    <TextView
-        android:id="@+id/userQuestion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/agbalumo"
-        android:text="userQuestion"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="830dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userQuestion"
-        tools:listitem="@layout/activity_result_card" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/agbalumo"
+            android:text="Your Question"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/userQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/agbalumo"
+            android:text="userQuestion"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginTop="30dp"
+            tools:listitem="@layout/activity_result_card" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chatButton"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_bar"
+            android:fontFamily="@font/agbalumo"
+            android:text="Chat more with AI -->"
+            android:textAllCaps="false"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

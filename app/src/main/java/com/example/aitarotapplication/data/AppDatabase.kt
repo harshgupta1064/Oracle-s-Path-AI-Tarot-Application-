@@ -10,6 +10,7 @@ abstract class AppDatabase : RoomDatabase() {
 
     abstract fun readingDao(): ReadingDao
 
+
     companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null
