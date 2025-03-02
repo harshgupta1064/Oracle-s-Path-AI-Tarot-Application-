@@ -194,4 +194,5 @@ class ChatActivity : AppCompatActivity() {
         speechRecognizer.destroy()
         tts.shutdown()
     }
+
 }

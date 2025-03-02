@@ -1,5 +1,6 @@
 package com.example.aitarotapplication.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -40,9 +41,16 @@ class HistoryDetailsActivity : AppCompatActivity() {
                 tarotCard(3, it.card3Message)
             )
 
+
             // Setup the RecyclerView to display the cards horizontally.
             recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
             recyclerView.adapter = resultCardAdapter(selectedCards)
+        }
+        binding.chatButton.setOnClickListener{
+            val intent = Intent(this,ChatActivity::class.java)
+            intent.putExtra("userQuestion", reading?.userQuestion)
+            startActivity(intent)
+
         }
 
     }
