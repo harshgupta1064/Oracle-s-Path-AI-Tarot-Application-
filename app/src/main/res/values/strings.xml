@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AI Tarot Application</string>
+    <string name="app_name">Oracle\'s Path</string>
     <string name="api_key">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</string>
     <string name="tarot_major_fool">New beginnings, spontaneity, and taking a leap of faith.</string>
     <string name="tarot_major_magician">Manifestation, resourcefulness, and creative power.</string>
